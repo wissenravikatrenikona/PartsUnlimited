@@ -21,6 +21,8 @@ namespace PartsUnlimited.Models
 
         public int RecommendationId { get; set; }
 
+        public string Discount { get; set; }
+
         [Display(Name = "Category")]
         public int CategoryId { get; set; }
 

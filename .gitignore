@@ -33,7 +33,7 @@ App_Data/
 bower_components
 node_modules
 *.sln.ide
-src/*/wwwroot
+
 *.ng.ts
 *.sln.ide
 project.lock.json
