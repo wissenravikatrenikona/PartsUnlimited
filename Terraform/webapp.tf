@@ -5,8 +5,13 @@
     container_name       = "terraform"
     key                  = "terraform.tfstate"
 	access_key  ="__storagekey__"
+  features{}
 	}
 	}
+  provider "azurerm" {
+    version = "=2.0.0"
+features {}
+}
 resource "azurerm_resource_group" "dev" {
   name     = "PULTerraform"
   location = "West Europe"
