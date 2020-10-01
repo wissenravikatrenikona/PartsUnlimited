@@ -8,6 +8,7 @@ namespace PartsUnlimited.Views
         public App()
         {
             InitializeComponent();
+            //this is changed by Sachin
             MainPage = new NavigationPage(new MainPage())
             {
                 BarBackgroundColor = ApplicationColors.MainDarkColour,
