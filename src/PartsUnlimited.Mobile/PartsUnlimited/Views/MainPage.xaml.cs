@@ -9,6 +9,7 @@ namespace PartsUnlimited.Views
         public MainPage()
         {
             InitializeComponent();
+            //this line was also changed by Sachin
         }
 
         async void Settings_OnClicked(object sender, EventArgs e)
