@@ -8,6 +8,7 @@ namespace PartsUnlimited.Views
         public App()
         {
             InitializeComponent();
+            //this lince was edited by Venkat 
             MainPage = new NavigationPage(new MainPage())
             {
                 BarBackgroundColor = ApplicationColors.MainDarkColour,
