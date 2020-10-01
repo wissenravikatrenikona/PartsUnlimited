@@ -9,6 +9,7 @@ namespace PartsUnlimited.Views
         {
             InitializeComponent();
             //this is changed by Sachin
+            //this lince was edited by Venkat 
             MainPage = new NavigationPage(new MainPage())
             {
                 BarBackgroundColor = ApplicationColors.MainDarkColour,
