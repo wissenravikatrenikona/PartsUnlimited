@@ -14,7 +14,7 @@ features {}
 }
 resource "azurerm_resource_group" "dev" {
   name     = "PULTerraform"
-  location = "West Europe"
+  location = "East us"
 }
 
 resource "azurerm_app_service_plan" "dev" {
