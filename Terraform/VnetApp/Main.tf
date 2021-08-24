@@ -1,8 +1,8 @@
 # We strongly recommend using the required_providers block to set the
 # Azure Provider source and version being used
 #Reference https://github.com/hashicorp/terraform-provider-azurerm/
-terraform {
-    required_version = ">= 0.11" 
+ terraform {
+  required_version = ">= 0.11" 
  backend "azurerm" {
   storage_account_name = "__terraformstorageaccount__"
     container_name       = "terraform"
@@ -10,12 +10,10 @@ terraform {
 	access_key  ="__storagekey__"
   features{}
 	}
-  required_providers {
-    azurerm = {
-      source = "hashicorp/azurerm"
-      version = "=2.71.0"
-    }
-  }
+	}
+  provider "azurerm" {
+    version = "=2.0.0"
+features {}
 }
 
 # Configure the Microsoft Azure Provider
