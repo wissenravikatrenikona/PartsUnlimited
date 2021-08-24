@@ -151,7 +151,7 @@ resource "azurerm_private_dns_zone_virtual_network_link" "dnszonelink" {
 # ref https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/sql_virtual_network_rule
 # Provision SQL server and integration with vnet Subnet
 resource "azurerm_sql_server" "sqlserver" {
-  name                         = "testazuresqlserver_wissen"
+  name                         = "testazuresqlsrvrwissen"
   resource_group_name          = azurerm_resource_group.dev.name
   location                     = azurerm_resource_group.dev.location
   version                      = "12.0"
