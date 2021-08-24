@@ -109,21 +109,21 @@ resource "azurerm_app_service" "frontwebapp" {
   }
 }
 
-resource azurerm_application_insights app_insights {
-  name                = "app_insigths"
-  resource_group_name = azurerm_resource_group.dev.name
-  location            = azurerm_resource_group.dev.location
-  application_type    = azurerm_app_service_plan.appserviceplan.application_type
-  sampling_percentage = "100"
-  retention_in_days   = "90"
+#resource azurerm_application_insights app_insights {
+ # name                = "app_insigths"
+  #resource_group_name = azurerm_resource_group.dev.name
+  #location            = azurerm_resource_group.dev.location
+  #application_type    = azurerm_app_service_plan.application_type
+  #sampling_percentage = "100"
+  #retention_in_days   = "90"
 
-  lifecycle {
-    ignore_changes = [
-      tags,
-      application_type
-    ]
-  }
-}
+  #lifecycle {
+   # ignore_changes = [
+    #  tags,
+     # application_type
+    #]
+  #}
+#}
 
 
 #integrate our java webapp with subnet mask
