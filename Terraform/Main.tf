@@ -110,7 +110,7 @@ resource "azurerm_app_service" "frontwebapp" {
 }
 
 resource azurerm_application_insights app_insights {
-  name                = "__app_insigths__"
+  name                = "app_insigths"
   resource_group_name = azurerm_resource_group.dev.name
   location            = azurerm_resource_group.dev.location
   application_type    = azurerm_app_service_plan
