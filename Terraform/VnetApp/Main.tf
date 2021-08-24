@@ -19,7 +19,7 @@ features {}
 # Create a resource group
 resource "azurerm_resource_group" "dev" {
   name     = "dev-rg"
-  location = "West US"
+  location = "East US"
 }
 
 # Create a virtual network in the develoment/scratch-resources resource group
